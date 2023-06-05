@@ -18,7 +18,7 @@ cd game-app
 
 ### Install the dependencies:
 npm install\
-npm install @mui/material @emotion/react @emotion/styled\
+npm install @mui/material @emotion/react @emotion/styled
 
 ### Start the development server:
 npm start\
