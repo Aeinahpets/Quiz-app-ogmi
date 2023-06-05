@@ -1,38 +1,107 @@
 .App {
+  font-family: "Monaco", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 62px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+.Menu, .Quiz, .EndScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.374); 
+  border-radius: 5px;
+}
+
+.Menu button, .EndScreen button{
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.374); 
+}
+
+.select_settings {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  flex: 0.8;
+  justify-content: space-evenly;
+
+}
+.Quiz .question{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 650px;
+  flex: 0.5;
+  font-size: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Quiz .options {
+  width: 500px;
+  height: 100px;
+  margin: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Quiz .options button {
+
+  background-color: rgba(255, 255, 255, 0.374); 
+  color: black;
+  outline: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Quiz .options button.correct {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Quiz .options button.incorrect {
+  background-color: red;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 44px;
   }
-  to {
-    transform: rotate(360deg);
+  .Quiz .question{
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .Quiz .options {
+    width: 300px;
+    height: 100px;
   }
 }
