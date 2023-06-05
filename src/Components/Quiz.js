@@ -5,7 +5,7 @@ import { Box, Button } from '@mui/material';
 import "../App.css";
 
 export default function Quiz() {
-    const { score, setScore, gameState, setGameState, category, difficulty } = useContext(QuizContext);
+    const { score, setScore, setGameState, category, difficulty } = useContext(QuizContext);
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [clickedButton, setClickedButton] = useState(null);

@@ -9,7 +9,7 @@ const categories = ["History","Gaming", "Science"];
 const difficulties = ["Easy", "Medium", "Hard"];
 
 export default function Menu() {
-    const { gameState, setGameState, score, setScore, category, setCategory, difficulty, setDifficulty } = useContext(QuizContext);
+    const { setGameState, setScore, category, setCategory, difficulty, setDifficulty } = useContext(QuizContext);
     const [error, setError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
