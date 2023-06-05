@@ -17,7 +17,8 @@ git clone https://github.com/Aeinahpets/quiz-app-ogmi
 cd game-app
 
 ### Install the dependencies:
-npm install
+npm install\
+npm install @mui/material @emotion/react @emotion/styled\
 
 ### Start the development server:
 npm start\
